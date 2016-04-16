@@ -1,6 +1,6 @@
 
 function main() {
-    
+
     // REFERENCES
     // http://www.w3schools.com/js/js_scope.asp
     // http://www.sitepoint.com/javascript-closures-demystified/
@@ -14,10 +14,12 @@ function main() {
     
     // Exercise #1a
     // Create and call a function that multiplies a parameter with a 'global' variable
+
     
     
     // Exercise #1b
     // Create and call a function that multiplies a parameter with a variable local to the 'main' function context
+    
     
     
     // Exercise #1c
@@ -38,21 +40,21 @@ function main() {
     // Exercise #4
     // Create a function that accepts the function defined below as a parameter, and then calls that function parameter within. Note here that we can pass functions into other functions. A common use for this is a callback function 
     var logProgress = function(progressMsg) {
-        console.log(progressMsg)
+        outputLine(progressMsg);
     }
     
     
     // Exercise #5
     // Complete the functions 'foo' and 'bar' so that the output of the call is 'This works!'.
     var foo = function() {
-      
+        
     };
 
     var bar = function(param) {
-      
+        
     };
 
-    bar(foo)();
+    //bar(foo)();
     
     
     // Exercise #
@@ -65,6 +67,7 @@ function main() {
     }; 
         
     
+    
     // Exercise #
     // Revise the w3schools exercise on 'object literals'. Recall that you can access a property of an object using the property name in string format, in this case we must use the square brackets as well (similar to when accessing items in an array)
     // Output the properties of the below object in this manner
@@ -74,11 +77,16 @@ function main() {
     }
     
     
+    
     // EXPERT level...
     
     
     // With the above 2 methods in mind, try think of an alternative way to storing items in an array, using an OBJECT instead
-    
+    var items = [
+        { id: 1, name: 'Item 1', desc: 'This is item 1' },
+        { id: 2, name: 'Item 2', desc: 'This is item 2' },
+        { id: 3, name: 'Item 3', desc: 'This is item 3' }
+    ]
     
     
     
