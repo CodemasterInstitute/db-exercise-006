@@ -57,7 +57,7 @@ function main() {
     //bar(foo)();
     
     
-    // Exercise #
+    // Exercise #6
     // Use a new type of loop, the For/In loop, to iterate over the properties of an object and output the values onto the screen
     // for (var prop in object) { }
     var person = {
@@ -68,7 +68,7 @@ function main() {
         
     
     
-    // Exercise #
+    // Exercise #7
     // Revise the w3schools exercise on 'object literals'. Recall that you can access a property of an object using the property name in string format, in this case we must use the square brackets as well (similar to when accessing items in an array)
     // Output the properties of the below object in this manner
     var person = { 
@@ -81,15 +81,33 @@ function main() {
     // EXPERT level...
     
     
-    // With the above 2 methods in mind, try think of an alternative way to storing items in an array, using an OBJECT instead
+    // Exercise #8
+    // With the above 2 methods in mind, think of an alternative way to storing items in an array, using an OBJECT instead
     var items = [
         { id: 1, name: 'Item 1', desc: 'This is item 1' },
         { id: 2, name: 'Item 2', desc: 'This is item 2' },
         { id: 3, name: 'Item 3', desc: 'This is item 3' }
     ]
     
-    
-    
+
+    // Exercise #9
+    // Now, apply the same method in exercise 8 to this array, so that you have an OBJECT, then proceed to output the name and desc of each item using the provided function
+    var items = [
+        { id: 1, name: 'Item 1', desc: 'This is item 1', nameAndDesc: function() { return this.name + ' ' + this.desc; } },
+        { id: 2, name: 'Item 2', desc: 'This is item 2', nameAndDesc: function() { return this.name + ' ' + this.desc; } },
+        { id: 3, name: 'Item 3', desc: 'This is item 3', nameAndDesc: function() { return this.name + ' ' + this.desc; } }
+    ]
+
+
+    // Exercise #10
+    // And now produce the same result as in exercise 9 using a callback method
+    var items = [
+        { id: 1, name: 'Item 1', desc: 'This is item 1', nameAndDesc: function(logFunc) { /* complete me! */ } },
+        { id: 2, name: 'Item 2', desc: 'This is item 2', nameAndDesc: function(logFunc) { /* complete me! */ } },
+        { id: 3, name: 'Item 3', desc: 'This is item 3', nameAndDesc: function(logFunc) { /* complete me! */ } }
+    ]
+
+
 }
 
 function outputLine(line) {
